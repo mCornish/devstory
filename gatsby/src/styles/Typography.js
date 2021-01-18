@@ -55,6 +55,7 @@ const Typography = createGlobalStyle`
     font-family: var(--font-primary);
     color: var(--black);
     font-size: 18px;
+    line-height: 1.8;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -88,12 +89,21 @@ const Typography = createGlobalStyle`
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 1rem;
     color: var(--gray);
+  }
+
+  p, li, label, input, button {
+    font-size: 1rem;
   }
 
   p, li {
     color: var(--color-text-dark);
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   a {
@@ -114,6 +124,10 @@ const Typography = createGlobalStyle`
   }
   p a {
       border-bottom: 1px dotted var(--color-link);
+  }
+
+  label {
+    font-weight: bold;
   }
 
   .center {

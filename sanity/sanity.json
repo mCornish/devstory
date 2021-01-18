@@ -1,8 +1,18 @@
 {
   "root": true,
   "api": {
-    "dataset": "production",
-    "projectId": "ftec7ll7"
+    "projectId": "ftec7ll7",
+    "dataset": "production"
+  },
+  "env": {
+    "development": {
+      "api": {
+        "dataset": "staging"
+      },
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
   },
   "project": {
     "name": "devstory"
@@ -17,13 +27,6 @@
     "@sanity/code-input",
     "markdown"
   ],
-  "env": {
-    "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
-    }
-  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",

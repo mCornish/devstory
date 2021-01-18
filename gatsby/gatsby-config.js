@@ -17,7 +17,8 @@ export default {
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: process.env.GATSBY_SANITY_PROJECT_ID,
-        dataset: process.env.GATSBY_SANITY_DATASET,
+        dataset:
+          process.env.NODE_ENV === 'production' ? 'production' : 'staging',
         watchMode: true,
         token: process.env.SANITY_TOKEN,
       },

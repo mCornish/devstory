@@ -15,10 +15,6 @@ const GlobalStyles = createGlobalStyle`
 
     --content-width: 740px;
   }
-  html {
-    font-size: 10px;
-    line-height: 1.8;
-  }
 
   body {
     display: flex;
@@ -32,18 +28,20 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    background: var(--red);
+    background-color: var(--black);
     color: white;
+    box-sizing: border-box;
+    padding: 1em;
     border: 0;
-    padding: 0.6rem 1rem;
-    border-radius: 2px;
+    border-radius: 0;
+    font-size: 1rem;
     cursor: pointer;
-    --cast: 2px;
     box-shadow: var(--cast) var(--cast) 0 var(--grey);
     text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
     transition: all 0.2s;
+
     &:hover {
-      --cast: 4px;
+      background-color: var(--color-brand-1);
     }
   }
 
@@ -71,6 +69,22 @@ const GlobalStyles = createGlobalStyle`
 
   img {
     max-width: 100%;
+  }
+
+  input {
+    padding: 1em;
+    border: 0;
+
+    &:focus {
+      outline-color: var(--color-brand-1);
+      outline-style: solid;
+      outline-width: 2px;
+      outline-offset: -2px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgb(200, 200, 200);
+    }
   }
 
   .content {

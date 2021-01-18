@@ -17,7 +17,8 @@ const ContainerStyles = styled.div`
   }
   h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2em;
   }
   .chapter {
     font-weight: normal;

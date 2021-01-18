@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import BlockContent from '@sanity/block-content-to-react';
@@ -12,6 +12,7 @@ import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-solarized_dark';
 import SEO from '../components/SEO';
 import PostTitle from '../components/PostTitle';
+import EmailSignup from '../components/EmailSignup';
 
 const ContainerStyles = styled.div`
   display: flex;
@@ -50,7 +51,9 @@ const serializers = {
 };
 
 export default function SinglePostPage({ data: { post } }) {
-  console.log('SinglePostPage -> post', post);
+  const dataset =
+    process.env.NODE_ENV === 'production' ? 'production' : 'staging';
+
   return (
     <ContainerStyles>
       <SEO title={post.title} image={post.image?.asset?.fluid?.src} />
@@ -63,11 +66,13 @@ export default function SinglePostPage({ data: { post } }) {
               blocks={post.text}
               serializers={serializers}
               projectId={process.env.GATSBY_SANITY_PROJECT_ID}
-              dataset={process.env.GATSBY_SANITY_DATASET}
+              dataset={dataset}
             />
           )}
           {post.markdown && <ReactMarkdown>{post.markdown}</ReactMarkdown>}
         </div>
+
+        <EmailSignup />
       </ContentStyles>
     </ContainerStyles>
   );
