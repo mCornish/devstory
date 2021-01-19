@@ -38,6 +38,13 @@ export default function SEO({ children, location, description, title, image }) {
         key="ogsitename"
       />
       <meta property="og:description" content={description} key="ogdesc" />
+
+      {/* Google Search Console */}
+      <meta
+        name="google-site-verification"
+        content="UxgeINtOanaVYwND8jEyRPlMR1EgIAblVZQgbg86o0w"
+      />
+
       {children}
     </Helmet>
   );
