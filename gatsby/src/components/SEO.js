@@ -14,8 +14,12 @@ export default function SEO({ children, location, description, title, image }) {
       }
     }
   `);
+
   return (
-    <Helmet titleTemplate={`%s - ${site.siteMetadata.title}`}>
+    <Helmet
+      defaultTitle={site.siteMetadata.title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+    >
       <html lang="en" />
       <title>{title}</title>
 

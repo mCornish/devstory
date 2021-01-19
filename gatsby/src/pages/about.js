@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
+import SEO from '../components/SEO';
 
 const AboutStyles = styled.article`
   width: var(--content-width);
@@ -26,6 +27,7 @@ export default function AboutPage({ data }) {
   console.log('AboutPage -> data', data);
   return (
     <AboutStyles>
+      <SEO title="About" />
       <ReactMarkdown>{data?.about?.text}</ReactMarkdown>
     </AboutStyles>
   );

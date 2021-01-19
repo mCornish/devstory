@@ -7,6 +7,7 @@ import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 import Logo from './Logo';
+import SEO from './SEO';
 
 const ContainerStyles = styled.div`
   display: flex;
@@ -45,6 +46,7 @@ export default function Layout({ children }) {
   `);
   return (
     <ContainerStyles>
+      <SEO />
       <GlobalStyles />
       <Typography />
       <HeaderStyles>

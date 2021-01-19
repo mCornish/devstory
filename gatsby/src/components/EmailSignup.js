@@ -69,7 +69,8 @@ export default function EmailSignup() {
             placeholder="sendmestuff@gmail.com"
             onFocus={
               typeof window !== 'undefined' &&
-              window.gtag('event', 'email signup focus')
+              window.gtag &&
+              window?.gtag('event', 'email signup focus')
             }
           />
         </label>
