@@ -67,7 +67,10 @@ export default function EmailSignup() {
             id="MERGE0"
             defaultValue=""
             placeholder="sendmestuff@gmail.com"
-            onFocus={window.gtag('event', 'email signup focus')}
+            onFocus={
+              typeof window !== 'undefined' &&
+              window.gtag('event', 'email signup focus')
+            }
           />
         </label>
 
