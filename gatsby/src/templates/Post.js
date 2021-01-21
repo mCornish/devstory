@@ -35,7 +35,6 @@ const ContainerStyles = styled.div`
     font-size: 5em;
     font-family: 'Courier';
     line-height: 1;
-    letter-spacing: -0.2em;
   }
 `;
 
