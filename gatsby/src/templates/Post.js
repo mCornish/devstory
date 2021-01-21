@@ -32,8 +32,10 @@ const ContainerStyles = styled.div`
     margin-top: 0;
   }
   p:first-child:not(:last-child):first-letter {
-    font-size: 3em;
+    font-size: 5em;
     font-family: 'Courier';
+    line-height: 1;
+    letter-spacing: -0.2em;
   }
 `;
 
