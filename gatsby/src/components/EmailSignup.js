@@ -66,7 +66,7 @@ export default function EmailSignup() {
             name="MERGE0"
             id="MERGE0"
             defaultValue=""
-            placeholder="sendmestuff@gmail.com"
+            placeholder="make.me.stuff@gmail.com"
             onFocus={
               typeof window !== 'undefined' &&
               window.gtag &&
