@@ -1,54 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
-import merriweather from '../assets/fonts/Merriweather-Regular.ttf';
-import merriweatherBold from '../assets/fonts/Merriweather-Bold.ttf';
-import merriweatherItalic from '../assets/fonts/Merriweather-Italic.ttf';
-import merriweatherBoldItalic from '../assets/fonts/Merriweather-BoldItalic.ttf';
-import merriweatherSans from '../assets/fonts/MerriweatherSans-Regular.ttf';
-import merriweatherSansBold from '../assets/fonts/MerriweatherSans-Bold.ttf';
-import merriweatherSansBoldItalic from '../assets/fonts/MerriweatherSans-BoldItalic.ttf';
-// import merriweatherSans from '../assets/fonts/MerriweatherSans-VariableFont_wght.ttf';
-
 const Typography = createGlobalStyle`
 :root {
     --font-primary: Merriweather, Georgia, serif;
     --font-secondary: Merriweather Sans, Helvetica, Arial, sans-serif;
-  }
-  @font-face {
-    font-family: Merriweather;
-    src: url(${merriweather});
-  }
-  @font-face {
-    font-family: Merriweather;
-    src: url(${merriweatherBold});
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: Merriweather;
-    src: url(${merriweatherItalic});
-    font-style: italic;
-  }
-  @font-face {
-    font-family: Merriweather;
-    src: url(${merriweatherBoldItalic});
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: Merriweather Sans;
-    src: url(${merriweatherSans});
-  }
-  @font-face {
-    font-family: Merriweather Sans;
-    src: url(${merriweatherSansBold});
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: Merriweather Sans;
-    src: url(${merriweatherSansBoldItalic});
-    font-weight: bold;
-    font-style: italic;
   }
 
   html {
@@ -101,7 +56,7 @@ const Typography = createGlobalStyle`
     color: var(--color-text-dark);
   }
 
-  ul {
+  ol, ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -130,12 +85,23 @@ const Typography = createGlobalStyle`
     font-weight: bold;
   }
 
-  .center {
-    text-align: center;
+  strong {
+    font-family: Merriweather;
+    font-weight: bold;
   }
 
-  strong {
-    font-family: "Merriweather-Bold";
+  blockquote {
+    margin: 1em 0;
+    padding: 1em;
+    border-left: .4em solid var(--color-brand-1);
+    font-size: 1.2rem;
+    font-family: Merriweather Sans;
+    font-weight: lighter;
+    color: rgba(0,0,0,.6);
+  }
+
+  .center {
+    text-align: center;
   }
 `;
 

@@ -67,8 +67,13 @@ const GlobalStyles = createGlobalStyle`
     border: 3px solid var(--white);
   }
 
+  figure {
+    margin: 0;
+  }
+
   img {
     max-width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
   }
 
   input {
@@ -85,6 +90,15 @@ const GlobalStyles = createGlobalStyle`
     &::-webkit-input-placeholder {
       color: rgb(200, 200, 200);
     }
+  }
+
+  code {
+    padding: .1em .2em;
+    background-color: rgba(0,0,0,.1);
+    color: var(--color-brand-2);
+    font-size: .9em;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
   }
 
   .content {

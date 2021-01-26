@@ -80,12 +80,12 @@ export default function EmailSignup() {
         </button>
       </div>
 
-      <input
+      {/* <input
         type="hidden"
         name="ht"
         value="54cb245e5c57246d81af1b336c1986669a6cd57f:MTYxMDUwMTEzNC40Njk0"
-      />
-      <input type="hidden" name="mc_signupsource" value="hosted" />
+      /> */}
+      {/* <input type="hidden" name="mc_signupsource" value="hosted" /> */}
     </FormStyles>
   );
 }

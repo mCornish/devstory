@@ -13,6 +13,7 @@ import 'ace-builds/src-noconflict/theme-solarized_dark';
 import SEO from '../components/SEO';
 import PostTitle from '../components/PostTitle';
 import EmailSignup from '../components/EmailSignup';
+import TwitterCTA from '../components/TwitterCTA';
 
 const ContainerStyles = styled.div`
   display: flex;
@@ -73,7 +74,10 @@ export default function SinglePostPage({ data: { post } }) {
           {post.markdown && <ReactMarkdown>{post.markdown}</ReactMarkdown>}
         </div>
 
-        <EmailSignup />
+        <TwitterCTA />
+
+        {/* TODO: Need a P.O. box or alternative address to use with MailChimp */}
+        {/* <EmailSignup /> */}
       </ContentStyles>
     </ContainerStyles>
   );
