@@ -32,7 +32,7 @@ export default function Footer() {
       <div>
         <a
           role="button"
-          href="https://www.mikecornish.me"
+          href="https://www.mikecornish.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -53,14 +53,6 @@ export default function Footer() {
           rel="noreferrer"
         >
           <FaGithub />
-        </a>
-        <a
-          role="button"
-          href="mailto:cornishmw@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaEnvelope />
         </a>
       </div>
     </FooterStyles>

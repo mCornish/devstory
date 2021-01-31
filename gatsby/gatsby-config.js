@@ -5,7 +5,7 @@ dotenv.config({ path: '.env' });
 export default {
   siteMetadata: {
     title: `devStory`,
-    siteUrl: 'https://devstory.mikecornish.me',
+    siteUrl: 'https://devstory.mikecornish.com',
     description: 'Tales of development',
     twitter: '@MikeWCornish',
   },
