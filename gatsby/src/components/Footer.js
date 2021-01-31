@@ -30,14 +30,14 @@ export default function Footer() {
     <FooterStyles>
       <p>&copy; devStory {new Date().getFullYear()}</p>
       <div>
-        <a
+        {/* <a
           role="button"
           href="https://www.mikecornish.com"
           target="_blank"
           rel="noreferrer"
         >
           <FaHome />
-        </a>
+        </a> */}
         <a
           role="button"
           href="https://twitter.com/MikeWCornish"
