@@ -47,8 +47,15 @@ export default function EmailSignup() {
     <CTAStyles>
       <h2>I'm making stuff for you</h2>
       <p>
-        This year, I'm making 6 projects and launching them. Follow me on
-        Twitter to keep up with all the action.
+        This year, I'm making 6 projects and launching them.{' '}
+        <a
+          href="https://twitter.com/intent/user?screen_name=MikeWCornish"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Follow me on Twitter
+        </a>{' '}
+        to keep up with all the action.
       </p>
       <TwitterTimelineEmbed
         sourceType="profile"
